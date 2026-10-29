@@ -40,17 +40,44 @@ Select ONE Additional Feature to Add
       border-radius: 2px;
     }
 
+    #playborder {
+      border: 3px solid rgb(110, 204, 34);
+      border-radius: 2px;
+    }
+
+    .playin  {
+      border: 3px solid rgb(255, 233, 105);
+      border-radius: 2px;
+    }
+
 
     body {cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='60' height='72' viewport='0 0 100 100' style='fill:black;font-size:36px;'><text y='50%'>😛</text></svg>") 16 0,auto; /*!emojicursor.app*/
       background-image: url()
     }
+
+    #crosspg {color:rgb(44, 77, 226)}
+
+    #minpg {color:rgb(176, 51, 192)}
+
+    #playpg {color:rgb(21, 163, 8)}
+
+    #crosslist {color:rgb(59, 112, 211)}
+
+    #minlist {color:rgb(196, 62, 214)}
+
+    #playlist {color:rgb(32, 179, 51)}
+
       </style>
 
 </head>
 
 
 
-<body>
+<body style="background-image:url(stripe.jpg)">
+
+
+
+<h1>UNFINISHED</h1>
 
   <h1>The best grandma games</h1>
 
@@ -59,13 +86,14 @@ Select ONE Additional Feature to Add
 we will be exploring <strong>three games...</strong>
 
   <ol>
-    <li><a href="#crosspg">the crossword</a></li>
+    <li><a href="#crosspg">The crossword</a></li>
     <li><a href="#minpg">Minute Cryptic</a></li>
+    <li><a href="#playpg">Crossplay</a></li>
   </ol>
 
   <h2 id="crosspg">The NYT crossword</h2>
 <h4> the crossword is a classic word game in which you get hints as to what word goes in the intersecting boxes</h4>
-  <ul>
+  <ul id="crosslist">
     <li>great for people who want to work on vocab, or who want a fun game to play with friends</li>
     <li>Helps with your literary problem solving skills</li>
     <li>Makes long, internet free periods pass by quickly</li>
@@ -103,9 +131,9 @@ we will be exploring <strong>three games...</strong>
 
  <h2 id="minpg">Minute cryptic</h2>
 
-<h4>the minute cryptic is a game where you extract letters out of a sentence to find an indicated word</h4>
+<h4>The minute cryptic is a game where you extract letters out of a sentence to find an indicated word</h4>
 
-  <ul>
+  <ul id="minlist">
     <li>Forces you to think outside the box</li>
     <li>Challenges your brain in ways you're not used to</li>
     <li>Once again, really fun to play with friends!</li>
@@ -117,8 +145,8 @@ we will be exploring <strong>three games...</strong>
   <table id="minborder">
     <thead>
       <tr>
-        <th class="minin">component</th>
-        <th class="minin">what it does</th>
+        <th class="minin">Component</th>
+        <th class="minin">What it does</th>
         
       </tr>
     </thead>
@@ -141,41 +169,41 @@ we will be exploring <strong>three games...</strong>
     </tbody>
   </table>
 
- <h2 id="minpg">Crossplay</h2>
+ <h2 id="playpg">Crossplay</h2>
 
 <h4>A 2 player game mimicking scrabble where you and your friends make words to get the most points</h4>
 
-  <ul>
-    <li>Forces you to think outside the box</li>
-    <li>Challenges your brain in ways you're not used to</li>
-    <li>Once again, really fun to play with friends!</li>
+  <ul id="playlist">
+    <li>You take turns making words</li>
+    <li>Very fun to challence your friends</li>
+    <li>Also has a bot mode if you wanna play solo</li>
   </ul>
 
 <h3></h3>
 
 
-  <table id="minborder">
+  <table id="playborder">
     <thead>
       <tr>
-        <th class="minin">component</th>
-        <th class="minin">what it does</th>
+        <th class="playin">component</th>
+        <th class="playin">what it does</th>
         
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="minin">Definition</td>
-        <td class="minin">what the final word is going to mean</td>
+        <td class="playin">Definition</td>
+        <td class="playin">what the final word is going to mean</td>
         
       </tr>
       <tr> 
-        <td class="minin">Fodder</td>
-        <td class="minin">the word that you are extracting letters from</td>
+        <td class="playin">Fodder</td>
+        <td class="playin">the word that you are extracting letters from</td>
        
         </tr>
         <tr>
-          <td class="minin">Indicator</td>
-          <td class="minin">what tells you how you're altering the fodder</td>
+          <td class="playin">Indicator</td>
+          <td class="playin">what tells you how you're altering the fodder</td>
           
           </tr
     </tbody>
